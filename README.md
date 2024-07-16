@@ -1,30 +1,17 @@
 # ARElight 0.25.0
 
 ![](https://img.shields.io/badge/Python-3.9-brightgreen.svg)
-![](https://img.shields.io/badge/AREkit-0.25.1-orange.svg)
-[![](https://img.shields.io/badge/demo-0.24.0-purple.svg)](https://guardeec.github.io/arelight_demo/template.html)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/ARElight/blob/v0.24.0/ARElight.ipynb)
-
-### :point_right: [DEMO](https://guardeec.github.io/arelight_demo/template.html) :point_left:
-
-<p align="center">
-    <img src="logo.png"/>
-</p>
 
 ARElight is an application for a granular view onto sentiments between mentioned named entities 
 in texts. 
-This repository is a part of the **ECIR-2024** demo paper: 
-[ARElight: Context Sampling of Large Texts for Deep Learning Relation Extraction](https://link.springer.com/chapter/10.1007/978-3-031-56069-9_23).
+For visual HCI with ARELight please wisit [ARElight-Server](https://github.com/mkncl/ARElight-server) page.
 
 
 # Installation
 
 ```bash
-pip install git+https://github.com/nicolay-r/arelight@v0.24.1
+pip install git+https://github.com/mkncl/ARELight
 ```
-
-## Usage: Inference
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/ARElight/blob/v0.24.0/ARElight.ipynb)
 
 Infer sentiment attitudes from text file **in English**:
 ```bash
@@ -45,9 +32,6 @@ python3 -m arelight.run.infer  \
     -o "output" \
     --from-files "<PATH-TO-TEXT-FILE>"
 ```
-
-> **NOTE:** [Applying ARElight for **non-english texts**](https://github.com/nicolay-r/ARElight/wiki/Language-Specific-Application)
->
 
 <details>
 <summary>
@@ -102,11 +86,6 @@ Framework parameters mentioned above as well as their related setups might be om
 
 </details>
 
-To Launch Graph Builder for D3JS and (optional) start DEMO server for collections in `output` dir:
-
-```bash
-cd output && python -m http.server 8000
-```
  
 ## Usage: Graph Operations
 
@@ -239,10 +218,3 @@ These weights represent the frequencies of discovered edges, indicating how ofte
 
 </details>
 
-## Powered by
-
-* AREkit [[github]](https://github.com/nicolay-r/AREkit)
-
-<p float="left">
-<a href="https://github.com/nicolay-r/AREkit"><img src="https://github.com/nicolay-r/ARElight/assets/14871187/01232f7a-970f-416c-b7a4-1cda48506afe"/></a>
-</p>
