@@ -91,8 +91,6 @@ Framework parameters mentioned above as well as their related setups might be om
 
 For graph analysis you can perform several graph operations by this script:
 
-1. Arguments mode:
-
 ```bash
 python3 -m arelight.run.operations \
 	--operation "<OPERATION-NAME>" \
@@ -103,11 +101,6 @@ python3 -m arelight.run.operations \
   	--description "[OPERATION] between Boris Johnson and Rishi Sunak on X/Twitter"
 ```
 
-2. Interactive mode:
-
-```bash
-python3 -m arelight.run.operations
-```
 
 `arelight.run.operations` allows you to operate ARElight's outputs using graphs: you can merge graphs, find their similarities or differences.
 
